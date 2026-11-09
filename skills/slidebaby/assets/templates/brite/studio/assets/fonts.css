@@ -1,0 +1,48 @@
+@font-face {
+  font-family: 'DM Mono';
+  font-style: normal;
+  font-weight: 300;
+  font-display: block;
+  src: url(fonts/font-01.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'DM Mono';
+  font-style: normal;
+  font-weight: 400;
+  font-display: block;
+  src: url(fonts/font-02.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Outfit';
+  font-style: normal;
+  font-weight: 600;
+  font-display: block;
+  src: url(fonts/font-03.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Outfit';
+  font-style: normal;
+  font-weight: 800;
+  font-display: block;
+  src: url(fonts/font-04.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Outfit';
+  font-style: normal;
+  font-weight: 900;
+  font-display: block;
+  src: url(fonts/font-05.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Source Serif Pro';
+  font-style: normal;
+  font-weight: 400;
+  font-display: block;
+  src: url(fonts/font-06.ttf) format('truetype');
+}
+@font-face {font-family:'Outfit';font-style:normal;font-weight:500;font-display:block;src:url(fonts/outfit-medium.ttf) format('truetype');}
+@font-face {font-family:'Outfit';font-style:normal;font-weight:700;font-display:block;src:url(fonts/outfit-bold.ttf) format('truetype');}
+
+@font-face {font-family:'Outfit Metrics';font-style:normal;font-weight:400;font-display:block;src:url(fonts/outfit-regular.ttf) format('truetype');}
+@font-face {font-family:'Source Serif Pro';font-style:italic;font-weight:900;font-display:block;src:url(fonts/source-serif-pro-black-italic.otf) format('opentype');}
+@font-face {font-family:'Outfit Roadmap';font-style:normal;font-weight:100 900;font-display:block;src:url(fonts/outfit-roadmap-variable.ttf) format('truetype');}

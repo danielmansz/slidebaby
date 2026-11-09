@@ -1,0 +1,24 @@
+{
+  "figmaFile": "GsfnOGehHPlfdYYRyIDoeu",
+  "sourceWireframe": "55:49",
+  "design": "81:3",
+  "tableFoundation": "65:1982",
+  "template": "table-criteria-matrix",
+  "family": "table",
+  "geometry": {
+    "width": 1920,
+    "height": 1080,
+    "criterionWidth": 580,
+    "optionWidths": [
+      420,
+      420,
+      420
+    ],
+    "rowHeightIncludingRule": 85
+  },
+  "logo": {
+    "path": "assets/figma/table-brand.svg",
+    "sha256": "573184e42b596a50fcb2428ea0f7c35f2f0f567f189e243587d98b30fdc24b00",
+    "reuse": "Existing exact Brite vector artwork cloned from Data table in the Figma design; preserve unchanged."
+  }
+}

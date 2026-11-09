@@ -1,0 +1,51 @@
+{
+  "fileKey": "GsfnOGehHPlfdYYRyIDoeu",
+  "section": "83:2219",
+  "frames": {
+    "outline": "13:50",
+    "filled": "83:2222",
+    "plain": "83:2279"
+  },
+  "background": {
+    "originalPath": "work/brite-summary-v417/figma-assets/summary-background-original.png",
+    "originalBytes": 18215002,
+    "originalSize": [
+      4096,
+      2731
+    ],
+    "originalSHA256": "cfb2cda51e574bf72d8532937809facee1726e16247eae9a417a9ea9be7e096f",
+    "path": "assets/summary-right-photo.webp",
+    "size": [
+      1620,
+      1080
+    ],
+    "bytes": 49682,
+    "sha256": "d4297bee01a53c93e66d7f7c81e96882896367b4cf9c0b056f33a50fb33fe09d",
+    "slot": {
+      "x": 1132,
+      "y": 0,
+      "width": 788,
+      "height": 1080,
+      "fit": "cover",
+      "objectPosition": "center"
+    }
+  },
+  "brand": {
+    "path": "assets/figma/brite-shared.svg",
+    "sha256": "564c8cf00ccb7fa85ade06c1628c01b0e2f9764481afcb46a32a2744f1bf2db2",
+    "exactSourceMatch": true
+  },
+  "geometry": {
+    "left": 40,
+    "introTop": 161,
+    "introWidth": 805,
+    "introTakeawayGap": 132,
+    "takeawayWidth": 798,
+    "actionsX": 987,
+    "actionsWidth": 855,
+    "actionMinHeight": 190,
+    "cardPadding": 48,
+    "stackGap": 32,
+    "plainStackGap": 0
+  }
+}

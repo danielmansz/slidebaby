@@ -1,0 +1,7 @@
+{
+  "schemaVersion": 1,
+  "id": "brite",
+  "version": "1.0.0",
+  "renderer": "brite-studio-24",
+  "deckIdentityRequired": true
+}

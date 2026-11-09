@@ -1,0 +1,86 @@
+{
+  "decision": "D67",
+  "fileKey": "GsfnOGehHPlfdYYRyIDoeu",
+  "referenceFrames": {
+    "comparison": "17:123",
+    "process": "64:1245",
+    "roadmap": "65:1697"
+  },
+  "filledTreatments": "Implementation extension of updated Outline photo geometry with existing Filled card styling.",
+  "photos": [
+    {
+      "family": "comparison",
+      "original": "work/brite-right-photo-v412/figma-assets/comparison-photo.png",
+      "originalSize": [
+        4096,
+        2731
+      ],
+      "originalBytes": 15665976,
+      "path": "assets/comparison-right-photo.webp",
+      "size": [
+        1620,
+        1080
+      ],
+      "bytes": 129670,
+      "sha256": "c105c216f6f5f1b5b7098fedfe2c95747d998d09a162aa040f34414f44001b86",
+      "slot": {
+        "x": 1132,
+        "y": 0,
+        "width": 788,
+        "height": 1080,
+        "fit": "cover",
+        "objectPosition": "50% 50%"
+      }
+    },
+    {
+      "family": "process",
+      "original": "work/brite-right-photo-v412/figma-assets/process-photo.png",
+      "originalSize": [
+        2236,
+        2975
+      ],
+      "originalBytes": 9393515,
+      "path": "assets/process-right-photo.webp",
+      "size": [
+        812,
+        1080
+      ],
+      "bytes": 108824,
+      "sha256": "2ea0bb0b0bb8e22d78399a147eaa11d559ed8b56383ce1597b1e5bc92d8d66b1",
+      "slot": {
+        "x": 1132,
+        "y": 0,
+        "width": 788,
+        "height": 1080,
+        "fit": "cover",
+        "objectPosition": "50% 50%"
+      }
+    },
+    {
+      "family": "roadmap",
+      "original": "work/brite-right-photo-v412/figma-assets/roadmap-photo.png",
+      "originalSize": [
+        3302,
+        2475
+      ],
+      "originalBytes": 13986565,
+      "path": "assets/roadmap-right-photo.webp",
+      "size": [
+        1441,
+        1080
+      ],
+      "bytes": 444158,
+      "sha256": "c1eb25b773adee3ad863fa95ae2a3132dd3efbe1bea303d54d87bea305e8ddf6",
+      "slot": {
+        "x": 1132,
+        "y": 0,
+        "width": 788,
+        "height": 1080,
+        "fit": "cover",
+        "objectPosition": "50% 50%"
+      }
+    }
+  ],
+  "originalSvgReuse": "Newly downloaded logo and Process rule byte hashes match existing local originals.",
+  "originals": "work/brite-right-photo-v412/figma-assets/"
+}

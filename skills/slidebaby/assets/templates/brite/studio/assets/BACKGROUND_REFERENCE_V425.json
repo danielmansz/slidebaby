@@ -1,0 +1,52 @@
+{
+  "file": "GsfnOGehHPlfdYYRyIDoeu",
+  "date": "2026-11-06",
+  "backgrounds": [
+    {
+      "palette": "light",
+      "node": "93:2441",
+      "source": "developer-evidence/slidebaby-background-v425/figma-originals/cover-background-light.png",
+      "sourceBytes": 544504,
+      "sourceSize": [
+        4096,
+        2304
+      ],
+      "sourceSha256": "80546964158ca11989c5b973294e3c9e4bc1f8abfa63378297cf7ccefe913b94",
+      "path": "assets/images/cover-background-light.webp",
+      "size": [
+        1920,
+        1080
+      ],
+      "bytes": 15352,
+      "sha256": "7f49911f8911bfdde2bb88fa3cff6513fc04091bfa464e057753a1b65734ccb9",
+      "quality": 88
+    },
+    {
+      "palette": "dark",
+      "node": "93:2424",
+      "source": "developer-evidence/slidebaby-background-v425/figma-originals/cover-background-dark.png",
+      "sourceBytes": 870093,
+      "sourceSize": [
+        3840,
+        2160
+      ],
+      "sourceSha256": "253552b5af3fac490ae5c2ff1e6bb441902da383df46aa8f5dbeed2453e83b92",
+      "path": "assets/images/cover-background-dark.webp",
+      "size": [
+        1920,
+        1080
+      ],
+      "bytes": 18866,
+      "sha256": "9a9d7a12bfebf46ec67039d977fb80d1808cd2b87b3d4108d822ad33bf16e989",
+      "quality": 88
+    }
+  ],
+  "slot": [
+    0,
+    0,
+    1920,
+    1080
+  ],
+  "foreground": "Reuse exact previously supplied Cover photos/brand vectors; keep whole-slide vertical centering.",
+  "note": "Background image is a separate optional layer for any template, not a contrast overlay."
+}

@@ -1,0 +1,199 @@
+{
+  "format": "WebP",
+  "maxHeight": 1080,
+  "quality": 85,
+  "originalBytes": 72507896,
+  "optimizedBytes": 1195274,
+  "images": [
+    {
+      "source": "assets/figma/agenda-photo.png",
+      "output": "assets/figma/agenda-photo.webp",
+      "originalSize": [
+        4096,
+        2304
+      ],
+      "size": [
+        1920,
+        1080
+      ],
+      "alpha": false,
+      "beforeBytes": 1684001,
+      "afterBytes": 31368
+    },
+    {
+      "source": "assets/figma/cards-side-photo.png",
+      "output": "assets/figma/cards-side-photo.webp",
+      "originalSize": [
+        4096,
+        2304
+      ],
+      "size": [
+        1920,
+        1080
+      ],
+      "alpha": false,
+      "beforeBytes": 1684001,
+      "afterBytes": 31368
+    },
+    {
+      "source": "assets/figma/cards-strip-photo.png",
+      "output": "assets/figma/cards-strip-photo.webp",
+      "originalSize": [
+        4096,
+        2304
+      ],
+      "size": [
+        1920,
+        1080
+      ],
+      "alpha": false,
+      "beforeBytes": 1635142,
+      "afterBytes": 31326
+    },
+    {
+      "source": "assets/figma/quote-portrait.png",
+      "output": "assets/figma/quote-portrait.webp",
+      "originalSize": [
+        2265,
+        2830
+      ],
+      "size": [
+        864,
+        1080
+      ],
+      "alpha": false,
+      "beforeBytes": 2875647,
+      "afterBytes": 44930
+    },
+    {
+      "source": "assets/figma/section-photo.png",
+      "output": "assets/figma/section-photo.webp",
+      "originalSize": [
+        4096,
+        2731
+      ],
+      "size": [
+        1620,
+        1080
+      ],
+      "alpha": false,
+      "beforeBytes": 17160355,
+      "afterBytes": 187562
+    },
+    {
+      "source": "assets/gallery/atlantic-money-desk.jpg",
+      "output": "assets/gallery/atlantic-money-desk.webp",
+      "originalSize": [
+        1920,
+        1080
+      ],
+      "size": [
+        1920,
+        1080
+      ],
+      "alpha": false,
+      "beforeBytes": 264372,
+      "afterBytes": 112334
+    },
+    {
+      "source": "assets/gallery/atlantic-money-hand.jpg",
+      "output": "assets/gallery/atlantic-money-hand.webp",
+      "originalSize": [
+        1920,
+        1080
+      ],
+      "size": [
+        1920,
+        1080
+      ],
+      "alpha": false,
+      "beforeBytes": 255353,
+      "afterBytes": 105058
+    },
+    {
+      "source": "assets/images/cards-background.png",
+      "output": "assets/images/cards-background.webp",
+      "originalSize": [
+        4096,
+        2304
+      ],
+      "size": [
+        1920,
+        1080
+      ],
+      "alpha": false,
+      "beforeBytes": 1635142,
+      "afterBytes": 31326
+    },
+    {
+      "source": "assets/images/cover.png",
+      "output": "assets/images/cover.webp",
+      "originalSize": [
+        3840,
+        2160
+      ],
+      "size": [
+        1920,
+        1080
+      ],
+      "alpha": false,
+      "beforeBytes": 5752950,
+      "afterBytes": 28064
+    },
+    {
+      "source": "assets/images/problem.png",
+      "output": "assets/images/problem.webp",
+      "originalSize": [
+        4096,
+        2304
+      ],
+      "size": [
+        1920,
+        1080
+      ],
+      "alpha": false,
+      "beforeBytes": 1684001,
+      "afterBytes": 31368
+    },
+    {
+      "source": "work/brite-summary-v417/figma-assets/summary-background-original.png",
+      "output": "assets/summary-right-photo.webp",
+      "originalSize": [
+        4096,
+        2731
+      ],
+      "size": [
+        1620,
+        1080
+      ],
+      "alpha": false,
+      "beforeBytes": 18215002,
+      "afterBytes": 49682
+    },
+    {
+      "source": "work/brite-roadmap-gradient-v4172/roadmap-gradient-original.png",
+      "output": "assets/roadmap-gradient.webp",
+      "originalSize": [
+        5064,
+        2849
+      ],
+      "size": [
+        1920,
+        1080
+      ],
+      "alpha": false,
+      "beforeBytes": 19661930,
+      "afterBytes": 510888
+    }
+  ],
+  "uiIllustration": {
+    "source": "user-uploaded temaplates.png (preserved outside package)",
+    "output": "assets/ui/templates.webp",
+    "size": [
+      340,
+      197
+    ],
+    "bytes": 32100,
+    "encoding": "lossless WebP"
+  }
+}

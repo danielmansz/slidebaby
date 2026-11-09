@@ -1,0 +1,35 @@
+{
+  "fileKey": "GsfnOGehHPlfdYYRyIDoeu",
+  "sectionId": "60:1057",
+  "frames": {
+    "comparison-outline": "17:123",
+    "comparison-filled": "64:1128",
+    "comparison-plain": "64:1179"
+  },
+  "assets": [
+    {
+      "path": "assets/figma/comparison-outline-rule.svg",
+      "sha256": "367361a79901dc5cf27bc3c335a3d1986c02fa77d52f6ed11b41074cfa540024",
+      "transform": "Original SVG preserved",
+      "rootMetadata": "<svg preserveAspectRatio=\"none\" overflow=\"visible\" style=\"display: block;\" width=\"793\" height=\"1\" viewBox=\"0 0 793 1\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">"
+    },
+    {
+      "path": "assets/figma/comparison-filled-rule.svg",
+      "sha256": "b175d4f72c638e41a22eb7888645244440d7e826c4e931ab34cde933c0da2510",
+      "transform": "Original SVG preserved",
+      "rootMetadata": "<svg preserveAspectRatio=\"none\" overflow=\"visible\" style=\"display: block;\" width=\"799\" height=\"1\" viewBox=\"0 0 799 1\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">"
+    },
+    {
+      "path": "assets/figma/comparison-plain-rule.svg",
+      "sha256": "6ac45152cdc3fa68286b64a51cc2c2b93846976c2b945f757cf4335b67559235",
+      "transform": "Original SVG preserved",
+      "rootMetadata": "<svg preserveAspectRatio=\"none\" overflow=\"visible\" style=\"display: block;\" width=\"870\" height=\"1\" viewBox=\"0 0 870 1\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">"
+    },
+    {
+      "path": "assets/figma/comparison-brand.svg",
+      "sha256": "564c8cf00ccb7fa85ade06c1628c01b0e2f9764481afcb46a32a2744f1bf2db2",
+      "transform": "Original SVG preserved",
+      "rootMetadata": "<svg preserveAspectRatio=\"none\" overflow=\"visible\" style=\"display: block;\" width=\"125.739\" height=\"32\" viewBox=\"0 0 125.739 32\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">"
+    }
+  ]
+}

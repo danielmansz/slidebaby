@@ -1,0 +1,24 @@
+{
+  "figmaFile": "GsfnOGehHPlfdYYRyIDoeu",
+  "figmaNode": "58:948",
+  "figure": {
+    "source": "work/brite-figure-v48/figma-assets/figure-reference.png",
+    "sourceSHA256": "292325700a2d7ef6396f0187f7f99617fc1fc1f6da2627fba2d91700a7789ef7",
+    "output": "assets/examples/figure-charts.webp",
+    "sha256": "8c3a8477ba99690752cae35a862136ba516126d34aab812f3aae9f33d2e5949a",
+    "originalBytes": 261532,
+    "outputBytes": 174668,
+    "dimensions": [
+      3068,
+      658
+    ],
+    "format": "lossless WebP",
+    "maxHeight": 1080
+  },
+  "brand": {
+    "path": "assets/figma/figure-brand.svg",
+    "sourceAsset": "ac226.svg",
+    "sha256": "564c8cf00ccb7fa85ade06c1628c01b0e2f9764481afcb46a32a2744f1bf2db2",
+    "transform": "Original SVG retained"
+  }
+}

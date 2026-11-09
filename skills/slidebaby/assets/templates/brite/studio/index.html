@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Slidebaby — presentation workspace</title>
+  <link rel="stylesheet" href="assets/fonts.css">
+  <link rel="stylesheet" href="slides.css">
+  <link rel="stylesheet" href="app.css">
+  <script src="samples/brite.js" defer></script>
+  <script src="catalog.js" defer></script>
+  <script src="presentation.js" defer></script>
+  <script src="exports.js" defer></script>
+  <script src="changelog.js" defer></script>
+  <script src="i18n.js" defer></script>
+  <script src="engine.js" defer></script>
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <header class="app-header">
+    <div class="app-identity">
+<a class="app-brand" href="#presentation" aria-label="Slidebaby"><img class="product-logo" src="assets/ui/slidebaby.svg" alt="Slidebaby" width="196" height="38"><span data-i18n="workspace">Brite template</span></a>
+      <p class="studio-credit"><span data-i18n="creatorCredit">Created by</span> <a href="https://www.linkedin.com/in/daniel-mansz/" target="_blank" rel="noopener noreferrer" data-i18n-aria="creatorProfile">Daniel Mansz · LinkedIn ↗</a></p>
+    </div>
+    <div class="header-actions">
+      <button type="button" class="text-action changelog-link" id="open-changelog" aria-haspopup="dialog" aria-controls="changelog-dialog" data-i18n="changelog">Changelog</button>
+      <label class="language-picker"><span data-i18n="language">Language</span><select id="language"><option value="en" lang="en">English</option><option value="pl" lang="pl">Polski</option></select></label>
+    </div>
+  </header>
+  <main class="app-main">
+    <div class="workspace-nav">
+      <div class="main-tabs" role="tablist" aria-label="Workspace" data-i18n-aria="workspaceNavigation">
+        <button type="button" id="tab-presentation" role="tab" aria-controls="panel-presentation" aria-selected="true" tabindex="0"><span data-i18n="myPresentation">My presentation</span><span id="slide-count" class="tab-count">0</span></button>
+        <button type="button" id="tab-templates" role="tab" aria-controls="panel-templates" aria-selected="false" tabindex="-1" data-i18n="templates">Templates</button>
+      </div>
+      <span class="local-label" data-i18n="localProject">Local project</span>
+    </div>
+    <section id="panel-presentation" role="tabpanel" aria-labelledby="tab-presentation">
+      <div id="empty-state" class="empty-state">
+        <div class="empty-heading"><p class="small-label" data-i18n="startHere">START HERE</p><h1 data-i18n="emptyTitle">Start with your own content.</h1><p class="intro-copy" data-i18n="emptyDescription">Your agent can choose layouts from this library to suit your text. Start with a ready-to-copy prompt, or pick a template yourself.</p><div class="empty-actions"><button id="create-from-content" class="action primary" type="button" aria-haspopup="dialog" aria-controls="content-dialog" aria-describedby="content-action-note" data-i18n="createFromContent">Create from my content</button><button class="action" type="button" data-open-templates data-i18n="browseTemplates">Browse templates</button></div><p id="content-action-note" class="empty-action-note" data-i18n="contentActionNote">Opens instructions to copy. Your AI agent creates the presentation in this project folder.</p></div>
+        <ol class="getting-started">
+          <li><span class="step-number">01</span><h2 data-i18n="step1Title">Copy the starter prompt</h2><p data-i18n="step1Text">Click Create from my content and copy the instructions. They ask your agent to choose suitable layouts for you.</p></li>
+          <li><span class="step-number">02</span><h2 data-i18n="step2Title">Add your content in the agent</h2><p data-i18n="step2Text">Open this project folder in your AI agent. Paste the prompt and add your text, or attach materials your agent can read.</p></li>
+          <li><span class="step-number">03</span><h2 data-i18n="step3Title">Come back to your slides</h2><p data-i18n="step3Text">After your agent saves the files, refresh this page. Your slides and prepared PDF will appear here.</p></li>
+        </ol>
+        <p class="manual-path" data-i18n="manualPath">Prefer to choose the layout yourself? Browse Templates and copy a prompt for a specific slide.</p>
+        <details class="help-details"><summary data-i18n="agentHelpTitle">What does my agent need?</summary><p data-i18n="agentHelpText">Your AI agent needs access to this project folder so it can save your slides here. This page is a preview and template library. Copying a prompt does not send it to an agent or create a slide.</p><p data-i18n="chromeHelp"></p><p data-i18n="contentHelp">Write your slide content in any language. The language menu changes the interface, explanations, and prompts only.</p></details>
+      </div>
+      <div id="presentation-content" hidden>
+        <div class="document-heading"><div><p class="small-label" data-i18n="yourDocument">YOUR DOCUMENT</p><h1 id="presentation-title"></h1><p id="document-summary" class="muted"></p></div><div class="document-actions"><button id="present" class="action" type="button" data-i18n="present" disabled>Present</button><button id="download" class="action primary" type="button" data-i18n="downloadPDF" disabled>Download PDF</button></div></div>
+        <div id="pdf-notice" class="pdf-notice"><p id="export-status" role="status" aria-live="polite"></p><button type="button" id="copy-export" class="text-action" data-i18n="copyPDFPrompt" hidden>Copy PDF instructions</button></div>
+        <div id="status" class="layout-notice" role="status" aria-live="polite"></div>
+        <details id="viewing-guide" class="help-details viewing-guide"><summary data-i18n="viewingHelpTitle">View in your browser and keep improving</summary><ol class="viewing-help-steps"><li><h3 data-i18n="viewingBrowserTitle"></h3><p data-i18n="viewingBrowserText"></p></li><li><h3 data-i18n="viewingPresentTitle"></h3><p data-i18n="viewingPresentText"></p></li><li><h3 data-i18n="viewingLiveTitle"></h3><p data-i18n="viewingLiveText"></p></li><li><h3 data-i18n="viewingEditTitle"></h3><p data-i18n="viewingEditText"></p></li></ol><div id="viewing-prompt-area"><button type="button" id="copy-viewing-prompt" class="text-action" data-i18n="copyViewingPrompt">Copy live-preview request</button></div></details>
+        <aside class="editing-guide" aria-labelledby="editing-guide-title"><img src="assets/ui/templates.webp" alt="" width="340" height="197"><div><h2 id="editing-guide-title" data-i18n="editingGuideTitle">Make these slides your own.</h2><p data-i18n="editingGuideText"></p><button type="button" class="action primary" data-open-templates data-i18n="browseTemplates">Browse templates</button></div></aside>
+        <div id="deck" aria-label="Presentation slides" data-i18n-aria="presentationSlides" tabindex="-1"></div>
+        <details class="help-details"><summary data-i18n="editHelpTitle">How do I change my slides?</summary><p data-i18n="editHelpText">Tell your agent which slide to change and describe the result you want. Ask it to save the presentation and regenerate the PDF, then refresh this page.</p></details>
+      </div>
+    </section>
+    <section id="panel-templates" role="tabpanel" aria-labelledby="tab-templates" hidden>
+      <div class="catalog-heading"><div><h1 data-i18n="catalogTitle">Find a layout for your content.</h1><p class="intro-copy" data-i18n="catalogDescription">Copy a variant’s prompt, or tell your agent its full name and the slide to change—for example, “Use Cover · Four-line title · Photo on slide 1.” Add your content for a new slide, or describe the changes to an existing one. Previews use sample content.</p></div><div class="catalog-palette-control"><span id="catalog-palette-label" data-i18n="templatePalette">Template palette</span><div class="palette-switch" role="group" aria-labelledby="catalog-palette-label"><button type="button" data-catalog-palette="light" aria-pressed="true" data-i18n="paletteLight">Light</button><button type="button" data-catalog-palette="dark" aria-pressed="false" data-i18n="paletteDark">Dark</button></div><button type="button" id="open-palette-help" class="text-action palette-help-link" aria-haspopup="dialog" aria-controls="palette-help-dialog" data-i18n="paletteHelpLink">How to use Light and Dark</button></div></div>
+      <div class="catalog-search" role="search" data-i18n-aria="searchTemplates">
+        <label for="template-search" data-i18n="searchTemplates">Search templates</label>
+        <div class="catalog-search-field">
+          <svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m16 16 4.5 4.5"/></svg>
+          <input id="template-search" type="search" maxlength="120" autocomplete="off" spellcheck="false" aria-controls="catalog" aria-describedby="template-search-hint" data-i18n-placeholder="searchPlaceholder" placeholder="Try comparison, results or next steps">
+          <button id="clear-template-search" type="button" class="text-action" data-i18n="clearSearch" hidden>Clear</button>
+        </div>
+        <p id="template-search-hint" class="catalog-search-hint" data-i18n="searchHint">Search by name or what you want to show, in English or Polish.</p>
+        <p id="template-search-status" class="catalog-search-status" role="status" aria-live="polite" aria-atomic="true"></p>
+      </div>
+      <div id="catalog-empty" class="catalog-empty" hidden>
+        <h2 data-i18n="searchEmptyTitle">No matching templates</h2>
+        <p data-i18n="searchEmptyText">Try a shorter phrase or clear the search to browse all layouts.</p>
+        <button id="reset-template-search" type="button" class="action" data-i18n="clearSearch">Clear</button>
+      </div>
+      <div id="catalog"></div>
+    </section>
+  </main>
+  <nav class="presentation-controls" aria-label="Presentation controls" data-i18n-aria="presentationControls" hidden><div class="presentation-controls-panel"><button type="button" id="previous" aria-label="Previous slide" data-i18n-aria="previousSlide">←</button><span id="position" aria-live="polite"></span><button type="button" id="next" aria-label="Next slide" data-i18n-aria="nextSlide">→</button><button type="button" id="leave" data-i18n="exit">Exit</button></div></nav>
+  <dialog id="preview-dialog"><div class="dialog-header"><h2 id="preview-title"></h2><button type="button" id="close-preview" class="action" data-i18n="close">Close</button></div><div id="preview-slide"></div><div class="dialog-footer"><p data-i18n="previewSample">Sample content · Your agent will use your own text.</p><button type="button" id="preview-copy" class="action primary" data-i18n="copyPrompt">Copy prompt</button></div></dialog>
+  <dialog id="content-dialog" aria-labelledby="content-dialog-title" aria-describedby="content-dialog-intro"><div class="dialog-header"><h2 id="content-dialog-title" data-i18n="contentDialogTitle">Let your agent choose the layouts.</h2><button type="button" id="close-content" class="action" data-i18n="close">Close</button></div><p id="content-dialog-intro" class="content-dialog-intro" data-i18n="contentDialogIntro">Copy this prompt into your AI agent with this project folder open. Add your text below it, or attach materials the agent can read. You do not need to pick each slide layout.</p><div id="starter-prompt-area"><div class="prompt-heading"><label for="starter-prompt" data-i18n="promptLabel">Prompt for your agent</label><button id="copy-starter" type="button" class="action primary" data-i18n="copyPrompt">Copy prompt</button></div><textarea id="starter-prompt" class="prompt-field" readonly spellcheck="false"></textarea></div><p class="content-dialog-note" data-i18n="contentBriefHint">Add the presentation's purpose, any required slide count, and whether your text may be shortened. Otherwise, the prompt asks the agent to preserve your content.</p><p class="content-dialog-note" data-i18n="contentLimitsHint">If the available layouts cannot represent something properly, the prompt asks the agent to explain the gap. Once it saves the slides and PDF, refresh this page.</p></dialog>
+  <dialog id="template-prompt-dialog" aria-labelledby="template-prompt-title" aria-describedby="template-prompt-description"><div class="dialog-header"><h2 id="template-prompt-title"></h2><button type="button" id="close-template-prompt" class="action" data-i18n="close">Close</button></div><p id="template-prompt-description" class="template-prompt-description"></p><div id="template-prompt-area"><label for="template-prompt-text" class="template-prompt-label" data-i18n="promptLabel">Prompt for your agent</label><textarea id="template-prompt-text" class="prompt-field" readonly spellcheck="false"></textarea></div><div class="dialog-footer template-prompt-footer"><button type="button" id="copy-template-prompt" class="action primary" data-i18n="copyPrompt">Copy prompt</button></div></dialog>
+  <dialog id="palette-help-dialog" aria-labelledby="palette-help-title" aria-describedby="palette-help-intro"><div class="dialog-header"><h2 id="palette-help-title" data-i18n="paletteHelpTitle">Use Light and Dark in your presentation</h2><button type="button" id="close-palette-help" class="action" data-i18n="close">Close</button></div><p id="palette-help-intro" class="content-dialog-intro" data-i18n="paletteHelpIntro"></p><ol class="palette-help-steps"><li><h3 data-i18n="paletteHelp1Title"></h3><p data-i18n="paletteHelp1Text"></p><p class="palette-example" data-i18n="paletteHelp1Example"></p></li><li><h3 data-i18n="paletteHelp2Title"></h3><p data-i18n="paletteHelp2Text"></p><p class="palette-example" data-i18n="paletteHelp2Example"></p></li><li><h3 data-i18n="paletteHelp3Title"></h3><p data-i18n="paletteHelp3Text"></p><p class="palette-example" data-i18n="paletteHelp3Example"></p></li><li><h3 data-i18n="paletteHelp4Title"></h3><p data-i18n="paletteHelp4Text"></p><p class="palette-example" data-i18n="paletteHelp4Example"></p></li></ol><p class="content-dialog-note" data-i18n="paletteHelpAssets"></p><p class="content-dialog-note" data-i18n="paletteHelpSave"></p></dialog>
+  <dialog id="changelog-dialog" aria-labelledby="changelog-title" aria-describedby="changelog-intro">
+    <div class="dialog-header"><h2 id="changelog-title" data-i18n="changelogTitle">What’s new in Slidebaby</h2><button type="button" id="close-changelog" class="action" data-i18n="close">Close</button></div>
+    <p id="changelog-intro" class="changelog-intro" data-i18n="changelogIntro">Recent changes included in this copy of Slidebaby. Template: Brite.</p>
+    <p class="changelog-build"><span data-i18n="releaseBuild">Release</span><span id="changelog-version"></span></p>
+    <div id="changelog-entries"></div>
+  </dialog>
+  <div id="toast" class="toast" role="status" aria-live="polite" hidden></div>
+  <noscript>This local workspace needs JavaScript. / Ten lokalny projekt wymaga JavaScript.</noscript>
+</body>
+</html>

@@ -1,0 +1,31 @@
+{
+  "decision": "D76",
+  "source": "work/brite-roadmap-gradient-v4172/roadmap-gradient-original.png",
+  "sourceSHA256": "4a56e32acd9e60c7a79f52326b0807d6d2cd592cfb9374fa4475594550603f3e",
+  "sourceSize": [
+    5064,
+    2849
+  ],
+  "sourceBytes": 19661930,
+  "asset": "assets/roadmap-gradient.webp",
+  "sha256": "26550eb45461d26ed8b5768451d2d893f05516fe109157674235abb1b9aa1ca4",
+  "size": [
+    1920,
+    1080
+  ],
+  "bytes": 510888,
+  "templates": [
+    "roadmap-outline-photo",
+    "roadmap-filled-photo"
+  ],
+  "slot": {
+    "x": 1132,
+    "y": 0,
+    "width": 788,
+    "height": 1080,
+    "fit": "cover",
+    "objectPosition": "center"
+  },
+  "supersedesBackground": "assets/roadmap-right-photo.webp",
+  "compatibility": "Old road image remains at its original path for saved projects; never replace guarded user assets."
+}

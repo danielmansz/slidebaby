@@ -1,0 +1,14 @@
+{
+  "date": "2026-11-06",
+  "supersedes": "COVER_REFERENCE_V424.json layout only for cover-default",
+  "decision": "D93",
+  "template": "cover-default",
+  "image": {
+    "left": 614,
+    "width": 1306,
+    "top": 112,
+    "height": 856,
+    "overlap": true
+  },
+  "scope": "Only the first named Cover intentionally extends behind text, in both palettes; no contrast gradient. Other Covers retain the26px non-overlap rule; photos/type/source content unchanged."
+}

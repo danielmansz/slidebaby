@@ -1,0 +1,4 @@
+interface:
+  display_name: "Slidebaby"
+  short_description: "Create and revise designed HTML/PDF presentations"
+  default_prompt: "Use $slidebaby to get started with Slidebaby: browse templates, run a sample, or create a presentation from my materials."

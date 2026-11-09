@@ -1,0 +1,123 @@
+Slidebaby Community License 1.0
+License identifier: LicenseRef-Slidebaby-Community-1.0
+Copyright (c) 2026 Daniel Mansz
+
+1. Scope and definitions
+
+This license covers the Slidebaby / brite-compose skill and the Brite template
+implementation supplied by Daniel Mansz, including its code, agent instructions,
+documentation and reusable layouts (the "Software"), only to the extent that
+Daniel Mansz holds rights to license them. A "Modified Version" is a copy or
+adaptation containing copyright-protected parts of the Software, whether renamed,
+rebranded, translated, repackaged or combined with other material. Third-party
+materials and your own content are addressed in section 6.
+
+"Presentation Outputs" are actual presentations created or edited using the
+Software for communication, viewing or further editing. They include PDF files,
+standalone HTML viewers, slide content, exported images and editable presentation
+projects or project ZIPs, including copies of the Software embedded or bundled
+in those outputs by the presentation workflow.
+
+2. Free use, modification and free sharing
+
+Subject to these terms, you receive a worldwide, non-exclusive, royalty-free
+license to download, install, run, copy, inspect and modify the Software to create,
+edit and deliver Presentation Outputs. This permission applies to personal,
+educational, nonprofit and commercial work, including paid work for clients.
+No payment to Daniel Mansz is required for these permitted uses.
+
+You may share unmodified copies and Modified Versions without charge under this
+same license, retaining the notices required by section 5. This includes public
+repositories, cloning and forks on GitHub or similar code-hosting platforms.
+Recipients receive these permissions directly from Daniel Mansz, not through a
+right to sell or relicense the Software. Modifications do not remove the terms
+applicable to the Software they contain.
+
+3. No resale of the tool
+
+You may not sell, resell, rent, lease, or license for a fee the Software or a
+Modified Version, or charge for its download, installation package, distribution
+or a license to use it as a reusable tool. This restriction applies to standalone
+copies and to inclusion in a paid software bundle, skill collection, template
+library or other product. Renaming it, making modifications, or describing the
+charge as access, membership or a subscription does not permit charging for
+copies or licenses to the Software itself.
+
+A fee for creating, designing, editing or delivering Presentation Outputs is
+expressly permitted under section 4. Charging for that work is not resale of the
+Software. Free sharing under section 2 remains permitted. Any broader permission
+to sell or license the tool requires a separate written agreement from Daniel
+Mansz. This license creates no separate general ban on hosting or automation;
+any distribution or licensing of the Software must still comply with this section.
+
+4. Presentation Outputs and paid client work
+
+You may create Presentation Outputs without charge from Daniel Mansz, charge
+clients for your presentation work, and use, publish, sell or deliver the resulting
+Presentation Outputs for personal or commercial purposes. You may deliver the
+PDF, HTML and editable project together, and clients may open, present, share,
+edit and continue working on their presentations.
+
+This permission expressly includes distributing the rendering code, styles,
+viewer, catalogue, layouts and other Software components included by the workflow
+in a real Presentation Output, including when you are paid for that presentation.
+The embedded or bundled Software remains under this license; recipients may use
+it under these same terms. Delivering a real presentation does not grant a right
+to extract, market or sell the Software as a reusable tool or template product.
+Merely wrapping the skill or a reusable template library in a nominal presentation
+does not turn a sale of the tool into permitted presentation work.
+
+Daniel Mansz claims no rights under this license to your original presentation
+content, your original additions, or your clients' material. No visible Slidebaby
+logo, watermark, author credit or link is required on presentation slides or PDFs.
+Retain existing legal notices in any Software code distributed with an output;
+those notices may remain in source code, embedded notice data or accompanying
+license files rather than appearing on slides.
+
+5. Notices and branding
+
+When distributing copies of the Software, including inside an editable project,
+retain this license, the copyright notices and applicable third-party notices.
+For standalone HTML, the included embedded license/notice data satisfies this
+requirement for the Software in that file. A PDF containing no Software code does
+not need to include this license; third-party requirements still apply.
+
+Clearly identify redistributed Modified Versions as modified and do not claim
+that Daniel Mansz officially produced, endorsed or supports them. This license
+provides no right to impersonate the author or imply official affiliation, and
+provides no separate trademark license. It does not restrict truthful attribution
+or use of the supplied product name/logo as part of the unmodified Software.
+
+6. Third-party materials and user content
+
+Photographs, fonts, user uploads and other third-party material retain their
+separate ownership and applicable licenses. This license does not replace,
+relicense or add restrictions to those independent rights. See
+THIRD_PARTY_NOTICES.md and the bundled font license files. Obtain any permissions
+needed for your own content and intended use of third-party material.
+
+7. Duration, breach and existing outputs
+
+These permissions continue while you comply with this license. They terminate
+if you materially breach its terms. If you remedy your first breach within
+30 days after receiving notice of it, your permissions are reinstated; otherwise
+reinstatement requires written permission from Daniel Mansz. Termination does
+not invalidate Presentation Outputs lawfully created and delivered before the
+breach, the rights of compliant downstream recipients, or independent third-party
+rights. No provision limits rights that applicable law gives you independently
+of this license. Rights not expressly granted are reserved.
+
+8. Warranty and liability
+
+To the maximum extent permitted by applicable law, the Software is provided
+"as is", without warranties of merchantability, fitness for a particular purpose,
+noninfringement, availability or error-free operation. To that same extent,
+Daniel Mansz is not liable for claims, losses or damages arising from the Software
+or its use. Nothing in this section excludes or limits liability or rights that
+applicable law does not allow to be excluded or limited.
+
+9. License text
+
+This is a custom source-available license, not an OSI-approved open-source
+license. The English text above governs; LICENSING.md contains explanatory
+English and Polish summaries and is not a replacement for these terms.

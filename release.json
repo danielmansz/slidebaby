@@ -1,0 +1,16 @@
+{
+  "product": "Slidebaby",
+  "version": "1.0.0",
+  "prepared": "2026-11-09",
+  "repository": "danielmansz/slidebaby",
+  "skill": "slidebaby",
+  "skillPath": "skills/slidebaby",
+  "templateRegistry": "assets/templates.json",
+  "templates": [
+    {
+      "id": "brite",
+      "version": "1.0.0"
+    }
+  ],
+  "candidate": "rc2"
+}

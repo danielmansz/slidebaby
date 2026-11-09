@@ -1,0 +1,13 @@
+* -text
+*.md text eol=lf
+*.mjs text eol=lf
+*.js text eol=lf
+*.json text eol=lf
+*.yaml text eol=lf
+*.yml text eol=lf
+*.html text eol=lf
+*.css text eol=lf
+*.py text eol=lf
+LICENSE text eol=lf
+# Preserve exact original asset/font/license bytes for guarded project upgrades.
+skills/slidebaby/assets/templates/brite/studio/assets/** -text

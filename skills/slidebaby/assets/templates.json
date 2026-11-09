@@ -1,0 +1,7 @@
+{
+  "schemaVersion": 1,
+  "default": "brite",
+  "templates": [
+    { "id": "brite", "manifest": "templates/brite/template.json" }
+  ]
+}

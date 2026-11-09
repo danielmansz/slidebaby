@@ -1,0 +1,13 @@
+.DS_Store
+Thumbs.db
+node_modules/
+__pycache__/
+*.py[cod]
+.env
+.env.*
+!.env.example
+/dist/
+/work/
+/outputs/
+/presentations/
+**/.brite/

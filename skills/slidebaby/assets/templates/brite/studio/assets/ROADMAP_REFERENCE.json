@@ -1,0 +1,67 @@
+{
+  "fileKey": "GsfnOGehHPlfdYYRyIDoeu",
+  "section": "65:1696",
+  "url": "https://www.figma.com/design/GsfnOGehHPlfdYYRyIDoeu/Slides?node-id=65-1696",
+  "frames": {
+    "outline": "65:1697",
+    "filled": "65:1873",
+    "plain": "65:1920"
+  },
+  "referenceMilestones": 3,
+  "implementedMilestoneBounds": [
+    2,
+    4
+  ],
+  "sampleCopy": "Illustrative Brite launch phases. Distinct phase-specific activities replace repeated Figma descriptions under D46. Supplied period/year labels remain unchanged; they are not real Brite commitments.",
+  "assets": [
+    {
+      "path": "assets/figma/roadmap-outline-first-rule.svg",
+      "source": "work/brite-roadmap-v411/figma-assets/rule-outline-first.svg",
+      "sha256": "5a0a53cdc1d8a1919befd88be540148ebbc59d9e06ceb411a5e8187a55075c23",
+      "root": "<svg preserveAspectRatio=\"none\" overflow=\"visible\" style=\"display: block;\" width=\"484.667\" height=\"1\" viewBox=\"0 0 484.667 1\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">"
+    },
+    {
+      "path": "assets/figma/roadmap-outline-rule.svg",
+      "source": "work/brite-roadmap-v411/figma-assets/rule-outline.svg",
+      "sha256": "5a0a53cdc1d8a1919befd88be540148ebbc59d9e06ceb411a5e8187a55075c23",
+      "root": "<svg preserveAspectRatio=\"none\" overflow=\"visible\" style=\"display: block;\" width=\"484.667\" height=\"1\" viewBox=\"0 0 484.667 1\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">"
+    },
+    {
+      "path": "assets/figma/roadmap-filled-first-rule.svg",
+      "source": "work/brite-roadmap-v411/figma-assets/rule-filled-first.svg",
+      "sha256": "2d86b628e9fe28db339fc0c1442a8865b9b43e8222a5bd209352b8a8f817be19",
+      "root": "<svg preserveAspectRatio=\"none\" overflow=\"visible\" style=\"display: block;\" width=\"490.667\" height=\"1\" viewBox=\"0 0 490.667 1\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">"
+    },
+    {
+      "path": "assets/figma/roadmap-filled-rule.svg",
+      "source": "work/brite-roadmap-v411/figma-assets/rule-filled.svg",
+      "sha256": "2d86b628e9fe28db339fc0c1442a8865b9b43e8222a5bd209352b8a8f817be19",
+      "root": "<svg preserveAspectRatio=\"none\" overflow=\"visible\" style=\"display: block;\" width=\"490.667\" height=\"1\" viewBox=\"0 0 490.667 1\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">"
+    },
+    {
+      "path": "assets/figma/roadmap-plain-rule.svg",
+      "source": "work/brite-roadmap-v411/figma-assets/rule-plain.svg",
+      "sha256": "db88eded46c46cbba538b9f3e1dd1cb57167c946f04eea29d87afb2b2eb68c0a",
+      "root": "<svg preserveAspectRatio=\"none\" overflow=\"visible\" style=\"display: block;\" width=\"560\" height=\"1\" viewBox=\"0 0 560 1\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">"
+    },
+    {
+      "path": "assets/figma/roadmap-brand.svg",
+      "source": "work/brite-roadmap-v411/figma-assets/brand.svg",
+      "sha256": "564c8cf00ccb7fa85ade06c1628c01b0e2f9764481afcb46a32a2744f1bf2db2",
+      "root": "<svg preserveAspectRatio=\"none\" overflow=\"visible\" style=\"display: block;\" width=\"125.739\" height=\"32\" viewBox=\"0 0 125.739 32\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">"
+    },
+    {
+      "path": "assets/fonts/outfit-roadmap-variable.ttf",
+      "source": "https://github.com/google/fonts/tree/main/ofl/outfit",
+      "sha256": "fc7287273e66929776e2ba54f144fe699080bec29f61bf649d70d871468aeade",
+      "weightRange": [
+        100,
+        900
+      ],
+      "usedWeight": 300,
+      "license": "assets/fonts/outfit-roadmap-OFL.txt"
+    }
+  ],
+  "font": "Official Google Fonts Outfit variable font, OFL license bundled, scoped Light300 for roadmap years; no system installation.",
+  "sourcePreservation": "Original SVGs retained unchanged; original downloaded assets and Figma context are preserved in work/brite-roadmap-v411."
+}

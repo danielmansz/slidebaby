@@ -1,0 +1,36 @@
+{
+  "fileKey": "GsfnOGehHPlfdYYRyIDoeu",
+  "section": "64:1244",
+  "frames": {
+    "process-outline": "64:1245",
+    "process-filled": "65:1580",
+    "process-plain": "65:1647"
+  },
+  "assets": [
+    {
+      "path": "assets/figma/process-outline-rule.svg",
+      "source": "work/brite-process-v410/figma-assets/rule-outline.svg",
+      "sha256": "ed0ace0519fadb66be49ece81e66e91202bdf27741b12e5240a2b6098e245608",
+      "root": "<svg preserveAspectRatio=\"none\" overflow=\"visible\" style=\"display: block;\" width=\"328\" height=\"1\" viewBox=\"0 0 328 1\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">"
+    },
+    {
+      "path": "assets/figma/process-filled-rule.svg",
+      "source": "work/brite-process-v410/figma-assets/rule-filled.svg",
+      "sha256": "22432486363b27e59f602245de58fb49530dd4a9a3793bade348c746949f33cf",
+      "root": "<svg preserveAspectRatio=\"none\" overflow=\"visible\" style=\"display: block;\" width=\"334\" height=\"1\" viewBox=\"0 0 334 1\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">"
+    },
+    {
+      "path": "assets/figma/process-plain-rule.svg",
+      "source": "work/brite-process-v410/figma-assets/rule-plain.svg",
+      "sha256": "38febab58266f1f7de89b6fa6ef8e64827cdf850bdf99e34571d06cc49fbd463",
+      "root": "<svg preserveAspectRatio=\"none\" overflow=\"visible\" style=\"display: block;\" width=\"400\" height=\"1\" viewBox=\"0 0 400 1\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">"
+    },
+    {
+      "path": "assets/figma/process-brand.svg",
+      "source": "work/brite-process-v410/figma-assets/brand.svg",
+      "sha256": "564c8cf00ccb7fa85ade06c1628c01b0e2f9764481afcb46a32a2744f1bf2db2",
+      "root": "<svg preserveAspectRatio=\"none\" overflow=\"visible\" style=\"display: block;\" width=\"125.739\" height=\"32\" viewBox=\"0 0 125.739 32\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">"
+    }
+  ],
+  "copyRevision": "Corrected example amounts/schedule descriptions under D46; original design text archived in work."
+}

@@ -1,0 +1,88 @@
+{
+  "schemaVersion": 1,
+  "id": "brite",
+  "name": "Brite",
+  "version": "1.0.0",
+  "runtime": "studio",
+  "renderer": "brite-studio-24",
+  "catalog": {
+    "recipes": 69,
+    "families": 14
+  },
+  "capabilities": {
+    "palettes": [
+      "light",
+      "dark"
+    ],
+    "layouts": [
+      "cover",
+      "agenda",
+      "divider",
+      "split",
+      "cards",
+      "gallery",
+      "metrics",
+      "quote",
+      "figure",
+      "comparison",
+      "process",
+      "roadmap",
+      "table",
+      "summary"
+    ]
+  },
+  "commands": {
+    "catalog": "scripts/catalog.mjs",
+    "check-runtime": "scripts/check-runtime.mjs",
+    "prepare-source": "scripts/prepare-source.mjs",
+    "check-plan": "scripts/check-plan.mjs",
+    "build-deck": "scripts/build-deck.mjs",
+    "sample": "scripts/run-smoke.mjs",
+    "compose": "scripts/compose.mjs",
+    "edit-slide": "scripts/edit-slide.mjs",
+    "edit-deck": "scripts/edit-deck.mjs",
+    "verify-document": "scripts/verify-document.mjs",
+    "export": "scripts/export.mjs",
+    "make-preview": "scripts/make-preview.mjs",
+    "open-preview": "scripts/open-preview.mjs",
+    "live-preview": "scripts/live-preview.mjs",
+    "package-project": "scripts/package-project.mjs",
+    "apply-recovery": "scripts/apply-recovery.mjs"
+  },
+  "legacy": {
+    "rendererPrefix": "brite-studio-",
+    "min": 1,
+    "max": 24,
+    "engineMarker": "window.BriteEngine",
+    "catalogMarker": "window.BriteCatalog"
+  },
+  "projectCommands": [
+    "catalog",
+    "check-runtime",
+    "check-plan",
+    "build-deck",
+    "sample",
+    "compose",
+    "edit-slide",
+    "edit-deck",
+    "verify-document",
+    "export",
+    "make-preview",
+    "open-preview",
+    "live-preview",
+    "package-project",
+    "apply-recovery"
+  ],
+  "bindings": {
+    "deck": "BRITE_PRESENTATION",
+    "catalog": "BriteCatalog",
+    "engine": "BriteEngine"
+  },
+  "load": [
+    "samples/brite.js",
+    "catalog.js",
+    "presentation.js",
+    "engine.js",
+    "changelog.js"
+  ]
+}

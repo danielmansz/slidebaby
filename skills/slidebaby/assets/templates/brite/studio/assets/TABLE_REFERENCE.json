@@ -1,0 +1,14 @@
+{
+  "fileKey": "GsfnOGehHPlfdYYRyIDoeu",
+  "frame": "65:1982",
+  "referenceColumns": 4,
+  "referenceRows": 6,
+  "assets": [
+    {
+      "path": "assets/figma/table-brand.svg",
+      "sha256": "573184e42b596a50fcb2428ea0f7c35f2f0f567f189e243587d98b30fdc24b00",
+      "root": "<svg preserveAspectRatio=\"none\" overflow=\"visible\" style=\"display: block;\" width=\"125.739\" height=\"32\" viewBox=\"0 0 125.739 32\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">"
+    }
+  ],
+  "sampleCopy": "Illustrative monthly Brite budget in GBP, preserving all supplied amounts and signs. Not a real customer budget."
+}

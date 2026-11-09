@@ -1,0 +1,56 @@
+{
+  "file": "GsfnOGehHPlfdYYRyIDoeu",
+  "nodes": [
+    "92:2368",
+    "1:19",
+    "92:2385"
+  ],
+  "date": "2026-11-06",
+  "sources": [
+    {
+      "node": "92:2369",
+      "original": "developer-evidence/slidebaby-cover-no-gradient-v424/figma-originals/cover-light.png",
+      "bytes": 5752950,
+      "sha256": "462ae7a84e2fa275e2e7aab466d3eec478f82176bfc8902d7a9fc9a8d82d2b1a"
+    },
+    {
+      "node": "1:20",
+      "original": "developer-evidence/slidebaby-cover-no-gradient-v424/figma-originals/cover-dark.png",
+      "bytes": 9845306,
+      "sha256": "1fd1ceabb9b6fe5d25ddd5448b20712fae8ca99514f3d0c538e9b36babc471e3"
+    },
+    {
+      "node": "92:2377",
+      "original": "developer-evidence/slidebaby-cover-no-gradient-v424/figma-originals/cover-light-brand.svg",
+      "bytes": 4713,
+      "sha256": "58a0bd400f290cb27d893ab768124be359f0a8e0d2d5d2baf4322ba088771b48"
+    },
+    {
+      "node": "1:28",
+      "original": "developer-evidence/slidebaby-cover-no-gradient-v424/figma-originals/cover-dark-brand.svg",
+      "bytes": 4725,
+      "sha256": "fc729b458fa694afe717f7677610eb5f361b43c552f525e098f34c8b32787ab8"
+    }
+  ],
+  "darkPhoto": {
+    "path": "assets/images/cover-dark-photo.webp",
+    "width": 1920,
+    "height": 1080,
+    "quality": 88,
+    "bytes": 123850,
+    "sha256": "5bbf8a406b736a597871a4ae4faa2cec5fb04ce60cb92b1775f9b3fa8bf5b015"
+  },
+  "lightPhoto": "assets/images/cover.webp",
+  "lightReuse": "Existing derivative from the same 5752950-byte Figma PNG; no raster re-encode.",
+  "layout": {
+    "copyLeft": 40,
+    "copyWidth": 1015,
+    "gap": 26,
+    "imageLeft": 1081,
+    "imageWidth": 839,
+    "imageTop": 112,
+    "imageHeight": 856
+  },
+  "darkFilledSurface": "#161616",
+  "notes": "Keep existing shared header/footer and whole-slide image centering. Explicit user no-overlap rule supersedes the wide overlapping crop shown in dark reference. No contrast overlay/gradient."
+}

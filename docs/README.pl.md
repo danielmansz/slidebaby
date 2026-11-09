@@ -1,12 +1,22 @@
 # Slidebaby
 
-**Zaprojektowane prezentacje tworzone z pomocą agenta AI.**
+**Prezentacje i pitch decki tworzone z pomocą agenta AI.**
 
-Przekaż tekst, notatki albo adres strony. Agent dobierze układy Brite, przygotuje
+Slidebaby to darmowy skill dla Codexa i Claude’a. Przekaż tekst, notatki albo adres
+strony, żeby stworzyć prezentację lub pitch deck. Agent dobierze układy Brite, przygotuje
 podgląd HTML i PDF, a kolejne poprawki zapisze w tym samym projekcie.
 [English](../README.md) · [Licencja](../LICENSE)
 
 ![Przykładowe szablony Brite](assets/brite-previews.webp)
+
+## Co możesz przygotować
+
+- **Pitch deck:** przedstaw startup, produkt lub pomysł biznesowy — problem, rozwiązanie, dane i kolejne kroki.
+- **Prezentację dla klienta:** pokaż propozycję, porównaj opcje lub podsumuj wyniki projektu.
+- **Prezentację produktu:** ułóż slajdy z notatek albo treści strony internetowej.
+- **Raport lub aktualizację dla zespołu:** przedstaw wskaźniki, postępy, proces lub roadmapę.
+
+[Przykładowe prośby do agenta, w tym pitch deck](EXAMPLES.md).
 
 ## Instalacja
 

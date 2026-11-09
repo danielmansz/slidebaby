@@ -6,17 +6,28 @@
   </picture>
 </p>
 
-**Designed presentations, created with your AI agent.**
+# Slidebaby — AI presentation and pitch deck generator
 
-Turn your text, notes or a webpage into a presentation. Slidebaby is the skill;
+Slidebaby is a free AI skill for Codex and Claude. Turn your text, notes or a webpage
+into presentations and pitch decks, with designed slide templates, an HTML preview
+and a matching PDF. Ask for changes in the same conversation.
+
 Brite is its first visual template, with its own typography and layout library.
-Get an HTML preview and a matching PDF, then ask for changes in the same conversation.
 
 [Po polsku](docs/README.pl.md) · [Install](#install) · [Get started](#get-started) · [License](#license)
 
 ![Brite template previews in Light and Dark](docs/assets/brite-previews.webp)
 
 *Illustrative template content. Brite is the template; Slidebaby is the tool.*
+
+## What you can make
+
+- **Pitch decks:** introduce a startup, product or business idea through its problem, solution, evidence and next steps.
+- **Client presentations:** explain a proposal, compare options or present project results.
+- **Product presentations:** turn product notes or a webpage into a focused slide deck.
+- **Reports and team updates:** present your metrics, progress, process or roadmap.
+
+[Try a pitch deck prompt or another example](docs/EXAMPLES.md).
 
 ## What you can do
 

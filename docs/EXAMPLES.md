@@ -8,6 +8,7 @@ own content. The bundled sample is illustrative, not your project.
 | --- | --- | --- |
 | Explore | Open an empty presentation and show me the templates. | Otwórz pustą prezentację i pokaż szablony. |
 | Try | Create a three-slide sample with photos, HTML and PDF. | Przygotuj trzy przykładowe slajdy ze zdjęciami, HTML i PDF. |
+| Pitch deck | Use Slidebaby to create an 8-slide pitch deck from the notes below for [audience]. You may organize and shorten the wording; preserve facts and do not invent claims or metrics. Deliver HTML and PDF. [Paste your notes.] | Użyj Slidebaby i przygotuj pitch deck z 8 slajdów na podstawie poniższych notatek dla [odbiorców]. Możesz uporządkować i skrócić tekst; zachowaj fakty, nie wymyślaj twierdzeń ani wskaźników. Przygotuj HTML i PDF. [Wklej notatki.] |
 | Exact copy | Create a presentation from this text. Keep the wording and slide boundaries exactly. | Zrób prezentację z tego tekstu. Zachowaj dokładne brzmienie i podział slajdów. |
 | Rough notes | Organize these notes into a presentation for [audience]. You may shorten wording; preserve facts and uncertainty. | Ułóż te notatki w prezentację dla [odbiorców]. Możesz skracać tekst; zachowaj fakty i niepewność. |
 | One webpage | Use only this homepage as the source: [URL]. Try its official logo if available. | Użyj tylko tej strony głównej jako źródła: [URL]. Spróbuj pobrać oficjalne logo. |

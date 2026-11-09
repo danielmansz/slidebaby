@@ -1,4 +1,10 @@
-<p align="left"><img src="skills/slidebaby/assets/templates/brite/studio/assets/ui/slidebaby.svg" width="196" alt="Slidebaby"></p>
+<p align="left">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="docs/assets/slidebaby-white.svg">
+    <source media="(prefers-color-scheme: light)" srcset="skills/slidebaby/assets/templates/brite/studio/assets/ui/slidebaby.svg">
+    <img src="skills/slidebaby/assets/templates/brite/studio/assets/ui/slidebaby.svg" width="196" height="38" alt="Slidebaby">
+  </picture>
+</p>
 
 **Designed presentations, created with your AI agent.**
 

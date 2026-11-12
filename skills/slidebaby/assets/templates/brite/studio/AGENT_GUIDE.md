@@ -60,6 +60,10 @@ After an authorized section addition/removal, maintain any existing Agenda, Cont
 
 Check the selected agenda's item-count and fit contract. If synchronization would require an extra agenda slide, an empty invalid agenda or deleting the whole overview, present the concrete choice and respect slide-count constraints. If no overview exists, keep the optional suggestion rule above; section editing does not itself require creating one.
 
+## Reveal cards during a presentation
+
+In the workspace, enable **Reveal cards one by one** (Polish: **Odsłaniaj karty po kolei**) before selecting **Present**. The option appears when the deck contains Feature cards or Summary & next steps slides. It starts off on a fresh page load. With it enabled, click the slide or use the forward controls to reveal one card at a time (left to right for Feature cards and top to bottom for Summary actions), then advance to the next slide. The backward controls undo a reveal before moving to the previous slide. The normal preview and PDF show all cards. This viewer option requires no changes to the slide data or export.
+
 ## Validate, save and deliver
 
 Use the first-run existing-runtime check before the first build. PDF requires Node20+, existing Playwright, a compatible Chrome/Edge/Chromium and pdf-lib. Use its verified paths; do not install dependencies or change global configuration automatically. Browser viewing and PDF rendering are independent.

@@ -208,12 +208,51 @@
     $('preview-dialog').querySelectorAll('.manual-copy,.copy-fallback').forEach(node=>node.remove());
     $('preview-dialog').showModal();requestAnimationFrame(resize);
   }
-  function show(index){
+  const revealCardSelector = '.cards-grid > .feature-card, .summary-actions > .summary-action';
+  let revealedCards = 0;
+  let revealEnabled = false;
+
+  function revealableCards() {
+    if (!revealEnabled || !document.body.classList.contains('presenting')) return [];
+    const activeSlide = $('deck').querySelector('.slide-item.active');
+    return activeSlide ? [...activeSlide.querySelectorAll(revealCardSelector)] : [];
+  }
+
+  function updatePresentationControls() {
+    const cards = revealableCards();
+    cards.forEach((card, index) => card.classList.toggle('card-awaiting-reveal', index >= revealedCards));
+    const canReveal = revealedCards < cards.length;
+    const canHide = cards.length > 0 && revealedCards > 0;
+    const count = deck?.slides?.length || 0;
+    const progress = cards.length ? ' · ' + t('revealProgress', {shown:revealedCards, total:cards.length}) : '';
+    $('position').textContent = `${count ? position + 1 : 0} / ${count}${progress}`;
+    $('previous').disabled = position === 0 && !canHide;
+    $('next').disabled = position >= count - 1 && !canReveal;
+    $('previous').setAttribute('aria-label', t(canHide ? 'previousCard' : 'previousSlide'));
+    $('next').setAttribute('aria-label', t(canReveal ? 'nextCard' : 'nextSlide'));
+  }
+
+  function stepPresentation(direction) {
+    const cards = revealableCards();
+    if (direction > 0 && revealedCards < cards.length) {
+      revealedCards++;
+      updatePresentationControls();
+    } else if (direction < 0 && cards.length && revealedCards > 0) {
+      revealedCards--;
+      updatePresentationControls();
+    } else if (position + direction >= 0 && position + direction < deck.slides.length) {
+      show(position + direction, direction < 0 ? Infinity : 0);
+    }
+  }
+
+  function show(index, initialCards = 0){
     const count=Array.isArray(deck?.slides)?deck.slides.length:0;
     position=Math.max(0,Math.min(index,count-1));
     document.querySelectorAll('#deck .slide-item').forEach((item,i)=>item.classList.toggle('active',i===position));
-    $('position').textContent=`${count?position+1:0} / ${count}`;
-    $('previous').disabled=position===0;$('next').disabled=position>=count-1;resize();
+    $('deck').querySelectorAll('.card-awaiting-reveal').forEach(card => card.classList.remove('card-awaiting-reveal'));
+    revealedCards = Math.min(initialCards, revealableCards().length);
+    updatePresentationControls();
+    resize();
   }
   function updateDocumentText(){
     const slides=Array.isArray(deck?.slides)?deck.slides:[],count=slides.length;
@@ -263,7 +302,7 @@
     updatePaletteControl();updatePromptModal();renderChangelog();
     for(const family of families.values()){family.title.textContent=family.definition.name[language];family.description.textContent=family.definition.description[language];updateFamily(family);}
     if(!$('toast').hidden)$('toast').textContent=t($('toast').dataset.message);
-    filterCatalog();updateDocumentText();renderSlideSuggestions();requestAnimationFrame(resize);
+    filterCatalog();updateDocumentText();renderSlideSuggestions();updatePresentationControls();requestAnimationFrame(resize);
   }
   async function updateDownload(ticket){
     state.matchingExport=null;$('download').disabled=true;
@@ -322,19 +361,38 @@
     });
     renderSlideSuggestions();
     await updateDownload(ticket);if(ticket!==generation)return;
-    $('present').disabled=!state.valid||state.empty;state.ready=true;updateDocumentText();show(position);
+    $('present').disabled=!state.valid||state.empty;
+    $('reveal-cards-option').hidden = $('present').disabled || !$('deck').querySelector(revealCardSelector);
+    state.ready=true;updateDocumentText();show(position);
     window.dispatchEvent(new CustomEvent('deck-ready',{detail:{valid:state.valid,empty:state.empty}}));
     return window.Brite.report();
   }
   async function enterPresentation(){
     if(!state.ready||!state.valid||state.empty||transition)return;
-    transition=true;switchView('presentation');document.body.classList.add('presenting');document.querySelector('.presentation-controls').hidden=false;resize();
+    transition=true;
+    revealEnabled = !$('reveal-cards-option').hidden && $('reveal-cards').checked;
+    switchView('presentation');document.body.classList.add('presenting');document.querySelector('.presentation-controls').hidden=false;
+    show(position);
     try {await document.documentElement.requestFullscreen?.();}catch(_){/* Windowed presentation remains available. */}
-    show(position);$('deck').focus({preventScroll:true});transition=false;
+    $('deck').focus({preventScroll:true});transition=false;
   }
+  function restoreWorkspace() {
+    document.body.classList.remove('presenting');
+    document.querySelector('.presentation-controls').hidden = true;
+    revealEnabled = false;
+    show(position);
+    $('present').focus({preventScroll:true});
+  }
+
   async function leavePresentation(){
-    if(transition)return;transition=true;document.body.classList.remove('presenting');document.querySelector('.presentation-controls').hidden=true;
-    if(document.fullscreenElement)await document.exitFullscreen();resize();$('present').focus({preventScroll:true});transition=false;
+    if(transition)return;
+    transition=true;
+    try {
+      if(document.fullscreenElement)await document.exitFullscreen();
+    } finally {
+      restoreWorkspace();
+      transition=false;
+    }
   }
 
   for(const name of ['presentation','templates'])$(`tab-${name}`).addEventListener('click',()=>switchView(name));
@@ -353,7 +411,14 @@
     const url=new URL(location.href);url.searchParams.set('lang',language);history.replaceState(null,'',url);localize();
   });
   $('present').addEventListener('click',enterPresentation);$('leave').addEventListener('click',leavePresentation);
-  $('previous').addEventListener('click',()=>show(position-1));$('next').addEventListener('click',()=>show(position+1));
+  $('previous').addEventListener('click',()=>stepPresentation(-1));
+  $('next').addEventListener('click',()=>stepPresentation(1));
+  $('deck').addEventListener('click', event => {
+    if (!revealEnabled || !document.body.classList.contains('presenting')) return;
+    if (!event.target.closest('.slide-item.active .slide-viewport')) return;
+    if (event.target.closest('a,button,input,select,textarea,[contenteditable]')) return;
+    stepPresentation(1);
+  });
   $('download').addEventListener('click',()=>{if(!state.valid||!state.matchingExport)return;const link=node('a');link.href=window.BRITE_INLINE_ASSETS?.[state.matchingExport.path]||state.matchingExport.path;link.download=state.matchingExport.filename;document.body.append(link);link.click();link.remove();});
   $('copy-export').addEventListener('click',()=>{const details=state.valid?'':`\n\n${state.issues.map(issue=>`${issue.componentId}: ${translatedIssue(issue)}`).join('\n')}`;copy(t(state.valid?'pdfInstructions':'fixInstructions')+details,{container:$('pdf-notice'),success:'pdfCopied'});});
   $('open-palette-help').addEventListener('click',()=>$('palette-help-dialog').showModal());
@@ -377,11 +442,13 @@
     if(!document.body.classList.contains('presenting')||event.target.matches('select,input,textarea'))return;
     if(event.key==='Escape'){leavePresentation();return;}
     if(event.key===' '&&event.target.closest('button'))return;
-    if(['ArrowRight','PageDown',' '].includes(event.key)){event.preventDefault();show(position+1);}
-    if(['ArrowLeft','PageUp'].includes(event.key)){event.preventDefault();show(position-1);}
+    if(['ArrowRight','PageDown',' '].includes(event.key)){event.preventDefault();stepPresentation(1);}
+    if(['ArrowLeft','PageUp'].includes(event.key)){event.preventDefault();stepPresentation(-1);}
     if(event.key==='Home')show(0);if(event.key==='End')show(deck.slides.length-1);
   });
-  document.addEventListener('fullscreenchange',()=>{if(!document.fullscreenElement&&!transition&&document.body.classList.contains('presenting')){document.body.classList.remove('presenting');document.querySelector('.presentation-controls').hidden=true;resize();}});
+  document.addEventListener('fullscreenchange', () => {
+    if (!document.fullscreenElement && !transition && document.body.classList.contains('presenting')) restoreWorkspace();
+  });
   window.addEventListener('resize',resize);
   window.Brite={
     layoutVersion:engine.layoutVersion,

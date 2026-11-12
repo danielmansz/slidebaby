@@ -24,10 +24,10 @@ podgląd HTML i PDF, a kolejne poprawki zapisze w tym samym projekcie.
 
 ```text
 $skill-installer zainstaluj skill w tym projekcie w .agents/skills/slidebaby z
-https://github.com/danielmansz/slidebaby/tree/v1.0.0/skills/slidebaby
+https://github.com/danielmansz/slidebaby/tree/v1.1.0/skills/slidebaby
 ```
 
-Możesz też pobrać `slidebaby-skill-v1.0.0.zip` z
+Możesz też pobrać `slidebaby-skill-v1.1.0.zip` z
 [Releases](https://github.com/danielmansz/slidebaby/releases), rozpakować i umieścić
 cały folder `slidebaby` w `.agents/skills/` swojego projektu.
 Jeśli pobierasz całe źródła repozytorium, skopiuj folder `skills/slidebaby` z jego wnętrza.

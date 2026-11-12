@@ -3,14 +3,14 @@ name: slidebaby
 description: Create and revise designed HTML/PDF presentations from text, notes or one webpage using registered Slidebaby templates, preserved wording and checked fit. No original-layout PPTX/PDF import.
 license: "LicenseRef-Slidebaby-Community-1.0; see LICENSE and THIRD_PARTY_NOTICES.md."
 metadata:
-  version: "1.0.0"
+  version: "1.1.0"
   author: Daniel Mansz
   author-url: https://www.linkedin.com/in/daniel-mansz/
 ---
 
 # Slidebaby
 
-Created and designed by [Daniel Mansz](https://www.linkedin.com/in/daniel-mansz/). Slidebaby (slidebaby.com) is the product; Brite is the current template. Version 1.0.0, renderer 24, 69 recipes / fourteen families. The main skill is `slidebaby`; visual templates are registered in assets/templates.json. Keep all installed starters empty.
+Created and designed by [Daniel Mansz](https://www.linkedin.com/in/daniel-mansz/). Slidebaby (slidebaby.com) is the product; Brite is the current template. Version 1.1.0, renderer 24, 69 recipes / fourteen families. The main skill is `slidebaby`; visual templates are registered in assets/templates.json. Keep all installed starters empty.
 
 The host agent organizes material and chooses designed layouts; bundled scripts check source correspondence, fit, edits and export. No model API is called by the helpers. The browser is a viewer and template library; users request edits in this conversation. Templates can be searched by name, legacy alias or common use case in English or Polish, with diacritics optional. Search filters discovery only; it never adds or changes slides.
 

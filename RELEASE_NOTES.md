@@ -1,47 +1,27 @@
-# Slidebaby v1.0.0
+# Slidebaby v1.1.0
 
-Create designed HTML/PDF presentations with your AI agent. Brite provides 69
-layout variants across 14 families, with Light/Dark per slide and English/Polish
-interface/help independent of your slide language.
+## Reveal cards one by one
 
-Start with an empty library, try the three-slide photo sample, or provide your
-own text, notes, readable material or one webpage. Continue requesting edits in
-the same conversation. Supported layout changes preserve wording; overflow can
-offer a concrete measured proposal for approval.
+Enable **Reveal cards one by one** before starting the HTML presentation. Click
+the slide or press Space or the right arrow to reveal the next card with a
+short upward entrance. Feature cards reveal in order. Vertical cards in
+Summary & next steps reveal from top to bottom. The normal preview and PDF
+show every card.
+
+## Odsłaniaj karty po kolei
+
+Włącz **Odsłaniaj karty po kolei** przed uruchomieniem pokazu HTML. Kliknij
+slajd albo użyj spacji lub prawej strzałki. Kolejna karta delikatnie wjedzie od
+dołu. Karty w pionie odsłaniają się od góry do dołu. Podgląd i PDF pokazują
+wszystkie karty.
 
 ## Downloads
 
-- `slidebaby-skill-v1.0.0.zip`: install/upload this complete skill folder.
-- `slidebaby-source-v1.0.0.zip`: full repository source and release tooling.
-- `SHA256SUMS`: checksums of the two archives.
+- `slidebaby-skill-v1.1.0.zip` for installing or uploading the complete skill.
+- `slidebaby-source-v1.1.0.zip` for the full repository and release tooling.
+- `SHA256SUMS` and `RELEASE_MANIFEST.json` for verification.
 
-## Requirements
+The option starts off. Chrome testing covered 23 cards across eight layouts,
+backward navigation, reduced motion, and complete PDF output.
 
-PDF generation needs existing Node.js 20+, Playwright, pdf-lib and compatible
-Chrome/Edge/Chromium. They are not bundled or installed automatically. A completed
-standalone HTML can be viewed in a modern browser. Host model usage/access is separate.
-
-## License
-
-Free presentation creation, including paid client work and delivery of real
-PDF/HTML/editable projects. No resale of the skill or modified versions.
-See LICENSE and separate font/image terms. This is custom source-available software.
-
-## Known limits
-
-- The browser is a viewer/library; the agent performs edits.
-- Original-layout PPTX/PDF import, native charts, arbitrary fonts/themes and
-  unrestricted component mixing are outside scope.
-- Local browser opening/live depends on host permissions. Cloud downloads are
-  snapshots and do not synchronize with your computer.
-- Measured fit/source checks do not certify visual contrast or narrative quality.
-  Overlapping classic Cover photos and bright areas behind light footer text
-  need visual inspection. No contrast gradients are added automatically.
-- Local macOS/Chrome, source/replay, export/archive and agent scenarios were
-  tested. Windows/Linux and this exact version in a new Claude account do not
-  have end-to-end clean-machine certification.
-
-Slidebaby installs as `slidebaby`, with registered visual-template bundles. Brite
-provides the initial visual system; saved visual-template identity is separate
-from layout recipe IDs and Light/Dark. Earlier private Brite projects remain
-compatible. This release does not automatically convert between visual templates.
+See the [installation guide](https://github.com/danielmansz/slidebaby/blob/v1.1.0/docs/INSTALLATION.md).

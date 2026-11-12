@@ -1,5 +1,11 @@
 # Changelog
 
+## 1.1.0 — 2026-11-12
+
+- Added optional click-to-reveal for Feature cards and vertical action cards in
+  Summary & next steps. Cards slide in gently from below during the HTML show.
+  The normal preview and PDF show all cards.
+
 ## 1.0.0 — 2026-11-09
 
 First public release line of Slidebaby, with Brite as its first registered visual template.

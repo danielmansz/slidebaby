@@ -10,7 +10,7 @@ From your project, ask `$skill-installer` to install the complete skill into
 `.agents/skills/slidebaby` in this project from:
 
 ```text
-https://github.com/danielmansz/slidebaby/tree/v1.0.0/skills/slidebaby
+https://github.com/danielmansz/slidebaby/tree/v1.1.0/skills/slidebaby
 ```
 
 For manual project-scoped setup, download the skill ZIP from the release,
@@ -35,7 +35,7 @@ Official reference: [OpenAI — Build skills](https://learn.chatgpt.com/docs/bui
 ## Claude and Claude Code
 
 Where your Claude account provides custom Skills and code execution, upload
-`slidebaby-skill-v1.0.0.zip` through **Customize → Skills → + Create skill → Upload a skill**,
+`slidebaby-skill-v1.1.0.zip` through **Customize → Skills → + Create skill → Upload a skill**,
 then enable it. The ZIP has one top-level `slidebaby` folder containing SKILL.md
 and all resources. Do not use the whole source/repository ZIP for skill upload.
 

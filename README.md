@@ -46,6 +46,8 @@ can be registered under the same skill; this release includes Brite only.
 
 ## Install
 
+[View Slidebaby on skills.sh](https://skills.sh/danielmansz/slidebaby/slidebaby) for the Skills CLI install command.
+
 ### Codex
 
 Ask the skill installer in your project:

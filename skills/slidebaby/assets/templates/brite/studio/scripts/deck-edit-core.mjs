@@ -8,7 +8,7 @@ function chromePatch(current,patch,catalog){
  return patch===null?null:{...(object(current)?current:{}),...structuredClone(patch)};
 }
 export function applyDeckEdit(input,request,catalog){
- if(!object(request)||!Object.keys(request).length||Object.keys(request).some(k=>!['slides','addSlides','removeSlides','slideOrder','chrome','splitSlides'].includes(k)))fail('Use slides, addSlides, removeSlides, slideOrder, splitSlides or chrome for a document edit.');
+ if(!object(request)||!Object.keys(request).length||Object.keys(request).some(k=>!['slides','addSlides','removeSlides','slideOrder','chrome','splitSlides','slideEntrance'].includes(k)))fail('Use slides, addSlides, removeSlides, slideOrder, splitSlides, chrome or slideEntrance for a document edit.');
  let deck=structuredClone(input);const reports=[],targets=new Set();
  if(own(request,'slides')){
   if(!Array.isArray(request.slides)||!request.slides.length)fail('slides needs explicit existing slide edits.');
@@ -66,6 +66,10 @@ export function applyDeckEdit(input,request,catalog){
   deck.slides=order.map(id=>deck.slides.find(s=>s.id===id));
  }
  if(own(request,'chrome'))deck.chrome=chromePatch(deck.chrome,request.chrome,catalog);
+ if(own(request,'slideEntrance')){
+  if(typeof request.slideEntrance!=='boolean')fail('slideEntrance must be true or false.');
+  deck.slideEntrance=request.slideEntrance;
+ }
  if(deck.slides.length<1||deck.slides.length>60)fail('Keep 1–60 slides in the presentation.');
  const ids=new Set(deck.slides.map(s=>s.id));
  for(const slide of deck.slides){

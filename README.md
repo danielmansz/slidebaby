@@ -54,10 +54,10 @@ Ask the skill installer in your project:
 
 ```text
 $skill-installer install the skill into this project at .agents/skills/slidebaby from
-https://github.com/danielmansz/slidebaby/tree/v1.1.0/skills/slidebaby
+https://github.com/danielmansz/slidebaby/tree/v1.2.0/skills/slidebaby
 ```
 
-Or download **slidebaby-skill-v1.1.0.zip** from [Releases](https://github.com/danielmansz/slidebaby/releases),
+Or download **slidebaby-skill-v1.2.0.zip** from [Releases](https://github.com/danielmansz/slidebaby/releases),
 unzip it, and put the complete `slidebaby` folder in your project's `.agents/skills/` directory.
 If you downloaded the full source repository, copy `skills/slidebaby` from inside it.
 Keep all files, not just SKILL.md. Select `$slidebaby`; restart the session if it has not appeared.
@@ -65,7 +65,7 @@ Keep all files, not just SKILL.md. Select `$slidebaby`; restart the session if i
 ### Claude
 
 In a Claude account with custom Skills and code execution available, upload
-**slidebaby-skill-v1.1.0.zip** using **Customize → Skills → + Create skill → Upload a skill**,
+**slidebaby-skill-v1.2.0.zip** using **Customize → Skills → + Create skill → Upload a skill**,
 then enable it. Upload the skill ZIP, not the repository/source ZIP.
 For Claude Code, the same complete folder can be placed in `.claude/skills/slidebaby`.
 

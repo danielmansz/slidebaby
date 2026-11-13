@@ -25,6 +25,8 @@ For a first deck read [SOURCE_TO_DECK.md](SOURCE_TO_DECK.md). Raw notes authoriz
 
 For later changes read [EDITING_WORKFLOW.md](EDITING_WORKFLOW.md). Use the current skill's edit-slide/edit-deck helper against this SAME project, without --output by default. Explicit text edits carry exact before values; additions/removals/reordering are tracked inputs. Do not append a replacement slide, rebuild from sample content or delete generation records. For Content↔Cards, Cards↔Process, Cover↔Section opener and concrete overflow choices read [REFLOW.md](REFLOW.md). Other cross-family/component remapping remains unsupported. A fit-conflict result is pending, not published: show the measured proposal and obtain acceptance before applying an unrequested split.
 
+To turn the slide entrance off or back on by request, use the [tracked slide entrance setting](EDITING_WORKFLOW.md#slide-entrance-animation).
+
 ## Preserve content and design
 
 Select by semantics, count, density and available assets using the live catalogue and relevant [TEMPLATE_CONTRACTS.md](TEMPLATE_CONTRACTS.md) family section. Do not invent facts, metrics, actions, timing, quotations or branding. Preserve complete table cells/blanks/order, original figures and truthful attribution. Exact counts/boundaries constrain fitting. Unsupported source structures need an explanation rather than omission. Retired text-default and figure-right remain readable for old projects, not new automatic selection.

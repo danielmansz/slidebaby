@@ -1,5 +1,11 @@
 # Changelog
 
+## 1.2.0 — 2026-11-13
+
+- Added a subtle upward fade when entering slides in presentation mode across all Brite layouts. The effect respects reduced motion. The preview and PDF show all content immediately.
+- Added agent commands to turn the slide entrance off or on for the current deck. Click-to-reveal cards are controlled separately.
+- Added slide-specific edit prompts for Cover, Content, and Feature cards, including photo changes, converting points to cards, and showing or hiding card numbers.
+
 ## 1.1.0 — 2026-11-12
 
 - Added optional click-to-reveal for Feature cards and vertical action cards in

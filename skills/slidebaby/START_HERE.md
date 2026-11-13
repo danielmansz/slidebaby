@@ -36,9 +36,9 @@ EN: Create presentations for free, including paid client work, and deliver PDF, 
 
 ## Setup / Instalacja
 
-PL: W lokalnym projekcie Codex zachowaj cały folder w `.agents/skills/slidebaby`; publiczne wywołanie to `$slidebaby`. W hostach obsługujących przesyłanie skilli dodaj cały pakiet zgodnie z ich instalatorem. Nie przesyłaj samego SKILL.md. Paczka 1.1.0 zawiera cały skill; instrukcje instalacji są w README repozytorium.
+PL: W lokalnym projekcie Codex zachowaj cały folder w `.agents/skills/slidebaby`; publiczne wywołanie to `$slidebaby`. W hostach obsługujących przesyłanie skilli dodaj cały pakiet zgodnie z ich instalatorem. Nie przesyłaj samego SKILL.md. Paczka 1.2.0 zawiera cały skill; instrukcje instalacji są w README repozytorium.
 
-EN: In a local Codex project, keep the complete folder at `.agents/skills/slidebaby`; `$slidebaby` is the public invocation. Hosts supporting uploaded skills should receive the complete package through their installer. Do not upload SKILL.md alone. The 1.1.0 package contains the complete skill; see the repository README for installation.
+EN: In a local Codex project, keep the complete folder at `.agents/skills/slidebaby`; `$slidebaby` is the public invocation. Hosts supporting uploaded skills should receive the complete package through their installer. Do not upload SKILL.md alone. The 1.2.0 package contains the complete skill; see the repository README for installation.
 
 PL: Generowanie PDF wymaga istniejących Node20+, Playwright, zgodnego Chrome/Edge/Chromium i pdf-lib tam, gdzie pracuje agent. Najpierw sprawdzane są dostępne narzędzia; nic nie instaluje się automatycznie. Oglądanie samodzielnego HTML nie wymaga tych narzędzi i może działać w Safari/Firefox. Lokalny Live preview gotowego projektu potrzebuje Node; ma przycisk Zatrzymaj i wygasa po godzinie bezczynności. Link w czacie może otworzyć podgląd aplikacji — to zależy od hosta.
 

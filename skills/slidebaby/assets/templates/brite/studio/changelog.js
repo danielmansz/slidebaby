@@ -1,8 +1,11 @@
 /* Public release notes included in this copy; no online update request. */
 (() => {
   window.SlidebabyChangelog=Object.freeze({
-    product:'Slidebaby',template:'Brite',version:'1.1.0',channel:'release',
-    entries:[{version:'1.1.0',date:'2026-11-12',changes:{
+    product:'Slidebaby',template:'Brite',version:'1.2.0',channel:'release',
+    entries:[{version:'1.2.0',date:'2026-11-13',changes:{
+      en:['All Brite layouts get a subtle upward fade in presentation mode. The effect respects reduced motion. Preview and PDF show the full slide immediately.','Ask your agent to turn slide transitions off or on for the current deck. Click-to-reveal cards are independent.','Copy slide-specific edit prompts under Cover, Content and Feature cards in the preview.'],
+      pl:['Wszystkie układy Brite delikatnie wjeżdżają od dołu i pojawiają się stopniowo w trybie prezentacji. Animacja respektuje ograniczenie ruchu. Podgląd i PDF od razu pokazują całą treść.','Poproś agenta o wyłączenie lub włączenie animacji przejścia slajdów. Odsłanianie kart po kliknięciu działa niezależnie.','Pod okładką, slajdem z treścią i kartami możesz skopiować polecenie dotyczące konkretnego slajdu.']
+    }},{version:'1.1.0',date:'2026-11-12',changes:{
       en:['Optional click-to-reveal for Feature cards and vertical action cards in Summary & next steps. Cards slide in gently from below during the HTML show. The normal preview and PDF show all cards.'],
       pl:['Opcjonalne odsłanianie kart funkcji i pionowych kart w Podsumowaniu i kolejnych krokach. Karty delikatnie wjeżdżają od dołu podczas pokazu HTML. Podgląd i PDF pokazują wszystkie karty.']
     }},{version:'1.0.0',date:'2026-11-09',changes:{

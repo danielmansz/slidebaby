@@ -314,26 +314,43 @@
     if(entry.fingerprint!==fingerprint||entry.layoutVersion!==engine.layoutVersion){state.pdfStatus='pdfStale';return;}
     state.matchingExport=entry;state.pdfStatus='pdfReady';$('download').disabled=false;
   }
+  const editActions={
+    Photo:'editAddPhoto',Image:'editReplacePhoto',Points:'editPoints',
+    ShowNumbers:'editShowNumbers',HideNumbers:'editHideNumbers',Card:'editAddCard'
+  };
   function renderSlideSuggestions(){
     [...$('deck').children].forEach((item,index)=>{
       item.querySelector('.slide-suggestions')?.remove();
-      const slide=deck.slides[index];if(!slide)return;
+      const slide=deck.slides[index];if(!slide?.id)return;
       const entry=catalog.entries.find(e=>e.id===slide.template?.id);
       const partner=entry?.pairedTemplate&&catalog.entries.find(e=>e.id===entry.pairedTemplate);
+      const pilot=['cover','split','cards'].includes(slide.layout);
       const ideas=[];
       if(!slide.image&&!slide.images?.length&&partner?.contract?.image?.required&&!partner.contract.image.collection)ideas.push({type:'Photo',template:partner.id});
       else if(slide.image||slide.images?.length)ideas.push({type:'Image'});
-      if(slide.layout==='cards'&&slide.cards?.length<4)ideas.push({type:'Card'});
+      const pointCount=slide.points?.length;
+      if(slide.layout==='split'&&pointCount>=2&&pointCount<=4){
+        const template=`cards-outline-${pointCount}${slide.image?'':'-no-image'}`;
+        if(catalog.entries.some(entry=>entry.id===template))ideas.unshift({type:'Points',template,count:pointCount});
+      }
+      if(slide.layout==='cards'){
+        ideas.unshift({type:slide.cardNumbers===false?'ShowNumbers':'HideNumbers'});
+        if(slide.cards?.length<4)ideas.push({type:'Card'});
+      }
       if(ideas.length<2&&!catalog.resolveChrome(slide,deck).brand)ideas.push({type:'Brand'});
       if(!ideas.length)return;
       const box=node('aside','slide-suggestions');box.setAttribute('aria-label',t('slideIdeas'));
-      box.append(node('p','suggestions-label',t('slideIdeas')));const row=node('div','suggestion-grid');
-      ideas.slice(0,2).forEach(idea=>{
-        const card=node('div','suggestion-card');card.append(node('h3','',t('idea'+idea.type+'Title')),node('p','',t('idea'+idea.type+'Text')));
+      box.append(node('p','suggestions-label',t('slideIdeas')));
+      if(pilot)box.append(node('p','suggestions-help',t('editPromptHelp')));
+      const row=node('div','suggestion-grid');
+      ideas.slice(0,slide.layout==='cards'?3:2).forEach(idea=>{
+        const card=node('div','suggestion-card');card.append(node('h3','',t('idea'+idea.type+'Title')),node('p','',t('idea'+idea.type+'Text',idea)));
         const button=node('button','text-action',t('copyEditPrompt'));button.type='button';
         button.addEventListener('click',()=>{
-          const prompt=[t('editPromptStart',{number:index+1,id:slide.id}),t('idea'+idea.type+'Title')+'.',t('idea'+idea.type+'Text'),idea.template?t('editPhotoRecipe',{id:idea.template}):'',t('editPromptRules')].filter(Boolean).join(' ');
-          copy(prompt,{container:card});
+          const actionKey=pilot&&editActions[idea.type];
+          const action=actionKey?t(actionKey,idea):[t('idea'+idea.type+'Title')+'.',t('idea'+idea.type+'Text'),idea.template?t('editPhotoRecipe',{id:idea.template}):''].filter(Boolean).join(' ');
+          const prompt=[t('editPromptStart',{number:index+1,id:slide.id}),action,t('editPromptRules')].join(' ');
+          copy(prompt,{container:card,success:'editPromptCopied'});
         });card.append(button);
         // Stock is a decorative option, never a substitute for a required figure or speaker portrait.
         const photoRecipe=idea.template&&catalog.entries.find(e=>e.id===idea.template);
@@ -371,13 +388,15 @@
     if(!state.ready||!state.valid||state.empty||transition)return;
     transition=true;
     revealEnabled = !$('reveal-cards-option').hidden && $('reveal-cards').checked;
+    document.body.classList.toggle('reveal-enabled',revealEnabled);
+    document.body.classList.toggle('slide-entrance-disabled',deck.slideEntrance===false);
     switchView('presentation');document.body.classList.add('presenting');document.querySelector('.presentation-controls').hidden=false;
     show(position);
     try {await document.documentElement.requestFullscreen?.();}catch(_){/* Windowed presentation remains available. */}
     $('deck').focus({preventScroll:true});transition=false;
   }
   function restoreWorkspace() {
-    document.body.classList.remove('presenting');
+    document.body.classList.remove('presenting','reveal-enabled','slide-entrance-disabled');
     document.querySelector('.presentation-controls').hidden = true;
     revealEnabled = false;
     show(position);

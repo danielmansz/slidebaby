@@ -34,6 +34,10 @@ const newProjection=!!normalized.splitSlides||requests.some(({id,edit})=>{
 // A new layout operation can opt into the additive v24 renderer on v23 projects.
 // Other saved runtimes remain deliberate --studio upgrades.
 if(!o.studio&&newProjection){const source=await fs.readFile(path.join(project,'engine.js'),'utf8'),version=Number(source.match(/brite-studio-(\d+)/)?.[1]);if(![23,24].includes(version))throw Error('This layout operation needs an explicit compatible --studio upgrade for the older saved runtime.');studio=await fs.realpath(helperStudio);}
+if(!o.slide&&Object.hasOwn(normalized,'slideEntrance')){
+ const viewerCss=await fs.readFile(path.join(studio,'app.css'),'utf8');
+ if(!viewerCss.includes('.presenting:not(.slide-entrance-disabled)'))throw Error('This viewer predates the slideEntrance setting. Use an explicit compatible --studio upgrade before saving this change.');
+}
 if(!inPlace&&output.startsWith(studio+path.sep))throw Error('Keep output outside the installed studio.');
 for(const operation of operations)if(Array.isArray(operation.addCards))for(const card of operation.addCards)card.id??=`card-${crypto.randomUUID()}`;
 await fs.mkdir(scratch,{recursive:true});const scratchStat=await fs.lstat(scratch);if(!scratchStat.isDirectory()||scratchStat.isSymbolicLink())throw Error('Scratch must be a real directory.');stage=await fs.mkdtemp(path.join(scratch,'brite-edit-'));const root=path.join(stage,'presentation');

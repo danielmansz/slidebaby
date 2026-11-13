@@ -143,3 +143,17 @@ Summary style switches use template:summary-outline / summary-filled / summary-p
 D94 / v4.25: Every template supports an independent optional background:{src,alt}, with guarded source mapping, normalized image provenance and tracked add/replace/remove. Read BACKGROUND_IMAGES.md. cover-background is third in Cover order and demonstrates both palettes with the supplied Figma backgrounds plus a classic wide foreground photo. That example also permits authored photo/text overlap; the previous first-Cover-only statement is superseded for this newly supplied design. No other layout/imagery is silently changed.69 recipes/fourteen families, renderer23, empty starter.
 
 D99: Reuse verified existing PDF browser/runtime paths. After a checked edit retain the current external live tab; do not open another window per correction. To reopen explicitly, use scripts/open-preview.mjs as described in DELIVERY.md.
+
+## Slide entrance animation
+
+For “Wyłącz animację przejścia slajdów” / “Turn off slide transitions”, pass
+`{"slideEntrance":false}` as the JSON input to `edit-deck.mjs` with the
+same project and normal runtime flags. Use `{"slideEntrance":true}` to restore
+the fade and upward entrance. The default for existing decks is enabled.
+If requested at creation, set the same boolean in `plan.presentation`.
+
+This is a deck-wide viewer preference set through the agent. Click-to-reveal
+cards retain their existing behavior. System reduced-motion preferences still
+apply. The standard edit updates the same HTML and PDF paths. If the saved
+viewer predates the setting, use the compatible studio's explicit `--studio`
+upgrade path after checking the saved visual template and renderer.
